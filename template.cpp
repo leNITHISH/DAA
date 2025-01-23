@@ -32,8 +32,6 @@ int main(void) {
 
 
     insertionSort(inputs.data(), inputs.end() - inputs.begin());
-  //  for(int input: inputs)std::cout<<input<<" ";
-
     auto end = std::chrono::system_clock::now();
     std::cout<<std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << "ms";
     return 0;
